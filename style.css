@@ -1,0 +1,10 @@
+
+
+:root {
+    --bg-color: #F1F5FE;
+    --bg-clr-two: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+}
