@@ -9,11 +9,14 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title">Is Your Birthday Lucky?</h1>
         <p class="description">This app will tell you whether your birthday is lucky or not. If you are a firm believer of luck then do try this out.</p>
-        <p class="format">This(DDMMYYYY) is the date of birth format in which you have to write your date of birth </p>
-        <input type="text" class="dateofbirth" placeholder="ddmmyyyy">
-        <p class="luckydescription">Enter your lucky number between 0 and 9</p>
-        <input type="number" class="luckynumber" placeholder="number between 0 and 9">
+        <p class="format"><strong>NOTE:</strong> This(DDMMYYYY) is the date of birth format in which you have to write your date of birth </p>
+        <label for="dateofbirth">Enter your date of birth below</label>
+        <input type="text" class="dateofbirth" id="dateofbirth" placeholder="ddmmyyyy">
+        <p class="luckydescription"><strong>NOTE:</strong> Enter your lucky number between 1 and 9</p>
+        <label for="luckynumber">Enter your lucky number below</label>
+        <input type="number" class="luckynumber" id="luckynumber" placeholder="number between 1 and 9">
         <button class="show">Calculate</button>
         <h1 class="output"></h1>
     </div>
