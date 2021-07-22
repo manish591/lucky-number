@@ -7,26 +7,39 @@
 }
 
 :root {
-    --bg-color: #F1F5FE;
-    --bg-clr-two: #fff;
+    --bg-color: #1D2C69;
+    --bg-clr-two: #0B122B;
+    --text-clr: white;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--text-clr);
     font-family: 'Helvetica', sans-serif;
 }
 
 .container {
-    background-color: var(--bg-clr-two);
+    background-color: var(--bg-color);
     width: 90vw;
-    margin: 0 auto;
+    margin: 10vh auto 20vh auto;
     box-shadow: 6px 6px 8px rgba(41, 40, 40, 0.253);
-    margin-top: 10vh;
     padding: 15px 5px;
+    background-color: #1D2C69;
+    color: var(--text-clr);
+}
+
+.minicontainer {
+    width: 90vw;
+    margin: 35vh auto 40vh auto;
+    border: 1px solid black;
+    padding: 10px;
+    color: var(--text-clr);
+    background-color: #1D2C69;
+    border-top-right-radius: 6rem;
+    box-shadow: 3px 3px 8px rgba(85, 84, 84, 0.616);
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-family: 'Anton', sans-serif;
     line-height: 1.1;
     margin-bottom: 6vh;
@@ -65,6 +78,12 @@ label {
 .output {
     font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-clr-two);
 }
 
 
