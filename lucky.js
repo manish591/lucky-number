@@ -2,6 +2,8 @@ const dateOfBirth = document.querySelector('.dateofbirth');
 const luckyNumber = document.querySelector('.luckynumber');
 const showButton = document.querySelector('.show');
 const output = document.querySelector('.output');
+const hidePrivacyNotice = document.querySelector('.cut');
+const privacySection = document.querySelector('.privacy');
 
 function showLuckyNumber () {
     let string = dateOfBirth.value;
@@ -30,3 +32,7 @@ function showLuckyNumber () {
 }
 
 showButton.addEventListener('click', showLuckyNumber);
+
+hidePrivacyNotice.addEventListener('click', () => {
+    privacySection.style.display = 'none';
+})

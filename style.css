@@ -22,7 +22,7 @@ body {
     width: 90vw;
     margin: 10vh auto 20vh auto;
     box-shadow: 6px 6px 8px rgba(41, 40, 40, 0.253);
-    padding: 15px 5px;
+    padding: 15px 15px;
     background-color: #1D2C69;
     color: var(--text-clr);
 }
@@ -47,6 +47,8 @@ body {
 
 .description {
     margin-top: 2vh;
+    margin-bottom: 6vh;
+    font-weight: bold;
 }
 
 .format, .luckydescription {
@@ -55,14 +57,17 @@ body {
 }
 
 input, button {
-    background-color: var(--bg-color);
+    background-color: var(--bg-clr-two);
+    color: var(--text-clr);
     border: 1px solid black;
 }
 
 input {
     display: block;
-    margin-top: 1.5vh;
-    padding: 10px 5px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    padding: 15px 10px;
+    width: 60%;
 }
 
 button {
@@ -83,9 +88,15 @@ label {
 .privacy {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: var(--bg-clr-two);
+    padding: 20px 5px;
+    font-size: .8rem;
 }
 
+.cut {
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 768px){
     .container {
