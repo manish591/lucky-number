@@ -15,6 +15,7 @@
 body {
     background-color: var(--text-clr);
     font-family: 'Helvetica', sans-serif;
+    background-image: url('');
 }
 
 .container {
@@ -43,6 +44,7 @@ body {
     font-family: 'Anton', sans-serif;
     line-height: 1.1;
     margin-bottom: 6vh;
+    text-shadow: 3px 2px black;
 }
 
 .description {
@@ -83,6 +85,8 @@ label {
 .output {
     font-family: 'Anton', sans-serif;
     font-size: 1.5rem;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px black;
 }
 
 .privacy {
@@ -98,8 +102,61 @@ label {
     cursor: pointer;
 }
 
+.connect {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-clr);
+    padding: 15px;
+}
+
+.footerlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerlink a {
+    text-decoration: none;
+    color: var(--text-clr);
+    margin-left: 4vw;
+    margin-top: 4vh;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 768px){
     .container {
         width: 50vw;
+    }
+
+    .minicontainer {
+        width: 50vw;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .privacy {
+        padding: 30px 10px;
+    }
+    
+    .description {
+        margin-top: 5vh;
+        font-size: 1.2rem;
+    }
+
+    input {
+        padding: 20px 10px;
+        margin-bottom: 7vh;
+    }
+    
+    button {
+        padding: 15px 20px;
+        margin-top: 5vh;
     }
 }
