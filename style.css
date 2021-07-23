@@ -15,7 +15,11 @@
 body {
     background-color: var(--text-clr);
     font-family: 'Helvetica', sans-serif;
-    background-image: url('');
+    background-image: url('/image/undraw_Birthday_cake_2wxy.svg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -124,6 +128,14 @@ label {
     margin-left: 4vw;
     margin-top: 4vh;
     font-weight: bold;
+}
+
+.outputgif {
+    width: 50%;
+}
+
+.hide {
+    display: none;
 }
 
 @media only screen and (min-width: 768px){

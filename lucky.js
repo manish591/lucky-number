@@ -4,6 +4,8 @@ const showButton = document.querySelector('.show');
 const output = document.querySelector('.output');
 const hidePrivacyNotice = document.querySelector('.cut');
 const privacySection = document.querySelector('.privacy');
+const ouputGif1 = document.querySelector('.outputgif1');
+const ouputGif2 = document.querySelector('.outputgif2');
 
 function showLuckyNumber () {
     let string = dateOfBirth.value;
@@ -21,9 +23,11 @@ function showLuckyNumber () {
     }
 
     if (sum % parseInt(luckyNumber.value) === 0) {
-        output.innerHTML = 'This is your lucky number!'
+        output.innerHTML = 'This is your lucky number!';
+        ouputGif1.classList.remove('hide');
     } else {
         output.innerHTML = 'No! This is not your lucky number.'
+        ouputGif2.classList.remove('hide');
     }
 
     dateOfBirth.value = '';
