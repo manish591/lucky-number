@@ -63,9 +63,9 @@ body {
 }
 
 input, button {
-    background-color: var(--bg-clr-two);
+    background-color: var(--bg-color);
     color: var(--text-clr);
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 input {
