@@ -10,7 +10,7 @@ const ouputGif2 = document.querySelector('.outputgif2');
 function showLuckyNumber () {
     resetGif();
     let string = dateOfBirth.value;
-    let arrayDateOfBirth = string.split("-");
+    let arrayDateOfBirth = string.split("-").join("").split("");
     let sum = 0;
     arrayDateOfBirth.forEach(item => {
         sum += parseInt(item);
